@@ -1,0 +1,100 @@
+<resources>
+    <string-array name="ram_sizes">
+        <item>-</item>
+        <item>2GB</item>
+        <item>4GB</item>
+        <item>6GB</item>
+        <item>8GB</item>
+        <item>12GB</item>
+        <item>16GB</item>
+        <item>32GB</item>
+    </string-array>
+    <string-array name="colors">
+        <item>-</item>
+        <item>Black</item>
+        <item>White</item>
+        <item>Red</item>
+        <item>Blue</item>
+        <item>Green</item>
+        <item>Yellow</item>
+    </string-array>
+    <string-array name="screen_sizes_tv">
+        <item>-</item>
+        <item>32"</item>
+        <item>40"</item>
+        <item>50"</item>
+        <item>55"</item>
+        <item>65"</item>
+        <item>70"</item>
+        <item>75"</item>
+        <item>80"</item>
+    </string-array>
+
+    <string-array name="storage">
+        <item>-</item>
+        <item>64GB</item>
+        <item>128GB</item>
+        <item>256GB</item>
+        <item>512GB</item>
+        <item>1024GB</item>
+    </string-array>
+
+    <string-array name="smartphonesOS">
+        <item>-</item>
+        <item>Android</item>
+        <item>IOS</item>
+        <item>NO OS</item>
+    </string-array>
+
+    <string-array name="LaptopsOS">
+        <item>-</item>
+        <item>Windwos</item>
+        <item>MacOs</item>
+        <item>Linux</item>
+        <item>NO OS</item>
+    </string-array>
+
+    <string-array name="screen_sizes_smartphones">
+        <item>-</item>
+        <item>6.82"</item>
+        <item>6.64"</item>
+        <item>6.51"</item>
+        <item>6.48"</item>
+        <item>6.25"</item>
+        <item>6.12"</item>
+        <item>6.07"</item>
+        <item>5.89"</item>
+        <item>5.60"</item>
+        <item>5.37"</item>
+        <item>5.21"</item>
+    </string-array>
+
+    <string-array name="screen_sizes_tablets">
+        <item>-</item>
+        <item>7"</item>
+        <item>8"</item>
+        <item>9"</item>
+        <item>10"</item>
+        <item>11"</item>
+        <item>12"</item>
+        <item>13"</item>
+        <item>14"</item>
+    </string-array>
+    <string-array name="screen_sizes_laptops">
+        <item>-</item>
+        <item>13"</item>
+        <item>14"</item>
+        <item>15"</item>
+        <item>16"</item>
+        <item>17"</item>
+    </string-array>
+    <string-array name="resolutions">
+        <item>-</item>
+        <item>720p</item>
+        <item>1080p</item>
+        <item>2k</item>
+        <item>4K</item>
+        <item>8K</item>
+    </string-array>
+
+</resources>

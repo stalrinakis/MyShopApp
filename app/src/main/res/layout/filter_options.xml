@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?attr/colorAccent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Category Filter -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/select_categories"
+            android:textStyle="bold"
+            android:paddingTop="8dp" />
+
+        <CheckBox
+            android:id="@+id/checkboxCategorySmartphones"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/smartphones"
+            android:textColor="?attr/android:textColor"
+            android:buttonTint="@color/Red"/>
+
+        <CheckBox
+            android:id="@+id/checkboxCategoryTablets"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/tablets"
+            android:buttonTint="@color/Red"
+            android:textColor="?attr/android:textColor"/>
+
+        <CheckBox
+            android:id="@+id/checkboxCategoryTVs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/tvs"
+            android:buttonTint="@color/Red"
+            android:textColor="?attr/android:textColor"/>
+
+        <CheckBox
+            android:id="@+id/checkboxCategoryLaptops"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/laptops"
+            android:buttonTint="@color/Red"
+            android:textColor="?attr/android:textColor"/>
+
+        <CheckBox
+            android:id="@+id/checkboxCategorySoftwareAccessories"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/soft_acc"
+            android:buttonTint="@color/Red"
+            android:textColor="?attr/android:textColor"/>
+
+        <CheckBox
+            android:id="@+id/checkboxCategoryVideoGames"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/video_games"
+            android:buttonTint="@color/Red"
+            android:textColor="?attr/android:textColor"/>
+
+        <!-- Price Range Filter -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/price_range_select"
+            android:textStyle="bold"
+            android:paddingTop="16dp" />
+
+        <com.google.android.material.slider.RangeSlider
+            android:id="@+id/rangeSliderPrice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:valueFrom="0"
+            android:valueTo="2000"
+            android:stepSize="1" />
+
+
+        <TextView
+            android:id="@+id/textViewPriceRange"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="" />
+
+        <!-- Rating Filter -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/min_rat"
+            android:textStyle="bold"
+            android:paddingTop="16dp" />
+
+        <com.google.android.material.slider.Slider
+            android:id="@+id/sliderRating"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:valueFrom="0"
+            android:valueTo="5"
+            android:stepSize="0.5" />
+
+        <!-- Smartphones Specific Filters -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/filt_smartphones"
+            android:textStyle="bold"
+            android:paddingTop="16dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/ram_size" />
+
+        <Spinner
+            android:id="@+id/spinnerSmartphonesRamSize"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/ram_sizes" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/color" />
+
+        <Spinner
+            android:id="@+id/spinnerSmartphonesColor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/colors" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/screen_size" />
+
+        <Spinner
+            android:id="@+id/spinnerSmartphonesScreenSize"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/screen_sizes_smartphones" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/storage" />
+
+        <Spinner
+            android:id="@+id/spinnerSmartphonesStorage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/storage" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/operation_system" />
+
+        <Spinner
+            android:id="@+id/spinnerSmartphonesOS"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/smartphonesOS" />
+
+        <!-- Tablets Specific Filters -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/filt_tablets"
+            android:textStyle="bold"
+            android:paddingTop="16dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/ram_size" />
+
+        <Spinner
+            android:id="@+id/spinnerTabletsRamSize"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/ram_sizes" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/color" />
+
+        <Spinner
+            android:id="@+id/spinnerTabletsColor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/colors" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/screen_size" />
+
+        <Spinner
+            android:id="@+id/spinnerTabletsScreenSize"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/screen_sizes_tablets" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/storage" />
+
+        <Spinner
+            android:id="@+id/spinnerTabletsStorage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/storage" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/operation_system" />
+
+        <Spinner
+            android:id="@+id/spinnerTabletsOS"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/smartphonesOS" />
+
+        <!-- TVs Specific Filters -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/filt_tvs"
+            android:textStyle="bold"
+            android:paddingTop="16dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/screen_size" />
+
+        <Spinner
+            android:id="@+id/spinnerTVScreenSize"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/screen_sizes_tv" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/storage" />
+
+        <Spinner
+            android:id="@+id/spinnerTVColors"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/colors" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/resolution" />
+
+        <Spinner
+            android:id="@+id/spinnerTVResolution"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/resolutions" />
+
+
+        <!-- Laptops Specific Filters -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/filt_laptops"
+            android:textStyle="bold"
+            android:paddingTop="16dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/ram_size" />
+
+        <Spinner
+            android:id="@+id/spinnerLaptopRamSize"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/ram_sizes" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/color" />
+
+        <Spinner
+            android:id="@+id/spinnerLaptopColor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/colors" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/screen_size" />
+
+        <Spinner
+            android:id="@+id/spinnerLaptopScreenSize"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/screen_sizes_laptops" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/storage" />
+
+        <Spinner
+            android:id="@+id/spinnerLaptopStorage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/storage" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/operation_system" />
+
+        <Spinner
+            android:id="@+id/spinnerLaptopOS"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/smartphonesOS" />
+
+
+        <!-- Apply Filter Button -->
+        <Button
+            android:id="@+id/buttonApplyFilters"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/apply"
+            android:paddingTop="16dp" />
+
+
+
+    </LinearLayout>
+</ScrollView>

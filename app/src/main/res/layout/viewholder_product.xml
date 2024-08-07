@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="190dp"
+    android:layout_height="250dp"
+    android:background="?attr/colorAccent"
+    android:layout_margin="9dp">
+
+    <ImageView
+        android:id="@+id/imageViewProduct"
+        android:layout_width="180dp"
+        android:layout_height="190dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <ImageView
+        android:id="@+id/imageViewWishHeart"
+        android:layout_width="32dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/wish_heart" />
+
+
+    <TextView
+        android:id="@+id/textViewProductTitle"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:lines="2"
+        android:maxLines="2"
+        android:ellipsize="end"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:text="ProductTitle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewProduct" />
+
+
+    <TextView
+        android:id="@+id/textViewRating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/imageViewProduct"
+        app:layout_constraintTop_toTopOf="@+id/textViewProductTitle" />
+
+    <ImageView
+        android:id="@+id/imageViewStar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewRating"
+        app:layout_constraintEnd_toStartOf="@+id/textViewRating"
+        app:layout_constraintTop_toTopOf="@+id/textViewRating"
+        app:srcCompat="@drawable/star" />
+
+    <TextView
+        android:id="@+id/textViewPrice1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:text="price1"
+        android:textColor="@color/raisin_black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewProductTitle" />
+
+    <TextView
+        android:id="@+id/textViewPrice2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="26sp"
+        android:layout_marginBottom="-5dp"
+        android:layout_marginLeft="4dp"
+        android:text="price2"
+        android:textColor="@color/LimeGreen"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textViewPrice1" />
+
+    <ImageView
+        android:id="@+id/imageViewReviews"
+        android:layout_width="18dp"
+        android:layout_height="24dp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/imageViewProduct"
+        app:layout_constraintTop_toTopOf="@+id/textViewPrice2"
+        app:srcCompat="@drawable/reviews" />
+
+    <TextView
+        android:id="@+id/textViewReviews"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1"
+        app:layout_constraintBottom_toBottomOf="@+id/imageViewReviews"
+        app:layout_constraintEnd_toStartOf="@+id/imageViewReviews"
+        app:layout_constraintTop_toTopOf="@+id/imageViewReviews" />
+</androidx.constraintlayout.widget.ConstraintLayout>
