@@ -1,4 +1,3 @@
-MyShopApp
 MyShopApp is an Android application that provides a user-friendly interface for online shopping. It features a bottom navigation bar, a side drawer for settings, and multiple fragments for different functionalities.
 
 Features
